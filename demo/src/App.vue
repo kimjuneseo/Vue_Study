@@ -4,7 +4,13 @@
   <div>
     <List name="김준서"/>
     <Template></Template>
+    <br>
     <Reactive></Reactive>
+    <br>
+    <Computed></Computed>
+    <br>
+    <ClassStyleBind></ClassStyleBind>
+    <br>
 
   </div>
 </template>
@@ -13,6 +19,8 @@
 import Reactive from './components/Reactive01.vue';
 import Template from './components/Template01.vue';
 import HelloWorld from './components/HelloWorld.vue';
+import Computed from './components/Computed01.vue';
+import ClassStyleBind from './components/ClassStyleBind.vue';
 
 export default {
   name: 'App',
@@ -20,7 +28,7 @@ export default {
     appName:String
   },
   components: {
-    HelloWorld, Template, Reactive
+    HelloWorld, Template, Reactive, Computed, ClassStyleBind
   },
   
   methods: {

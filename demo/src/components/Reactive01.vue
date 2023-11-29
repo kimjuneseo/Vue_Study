@@ -21,15 +21,12 @@ export default {
             this.count++;
             // console.log(document.querySelector('button').innerText = "11");
             nextTick(() => {
-                console.log(document.querySelector('button').innerText = "112");
+                // console.log(document.querySelector('button').innerText = "112");
             })
         },
         handleDebounceBtn: debounce(function() {
             this.count++;
-            // console.log(document.querySelector('button').innerText = "11");
-            nextTick(() => {
-                console.log(document.querySelector('button').innerText = "112");
-            })
+            
         }, 500)
     }
 }
