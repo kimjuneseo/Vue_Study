@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <HelloWorld @click="clickHello" msg="Welcome to Your Vue.js App"/> -->
+  
   <List name="김준서"/>
 </template>
 
@@ -14,8 +15,21 @@ export default {
   },
   components: {
     HelloWorld
+  },
+  
+  methods: {
+   clickHello($event){
+    console.log($event);
   }
+
 }
+}
+
+
+// console.log(document.querySelector('HelloWorld'));
+// document.querySelector('HelloWorld')?.addEventListener("click", () => {
+//   console.log(this);
+// })
 
 </script>
 
