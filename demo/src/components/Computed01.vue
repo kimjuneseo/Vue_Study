@@ -1,11 +1,11 @@
-<template lang="">
+<template>
     <div @click="handelDisplay">
-        {{Isdisaply}}
+        {{ Isdisaply }}
     </div>
 </template>
 <script>
 export default {
-    name: 'Computed',
+    name: 'Computed01',
     data() {
         return {
             divAttr: {
@@ -15,7 +15,7 @@ export default {
     },
     computed: {
         Isdisaply() {
-            return this.divAttr.display ?  'yes' : 'no';
+            return this.divAttr.display ? 'yes' : 'no';
         }
     },
     methods: {
