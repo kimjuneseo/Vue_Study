@@ -1,13 +1,17 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld @click="clickHello" msg="Welcome to Your Vue.js App"/> -->
-  
-  <List name="김준서"/>
-  <Template></Template>
+  <div>
+    <List name="김준서"/>
+    <Template></Template>
+    <Reactive></Reactive>
+
+  </div>
 </template>
 
 <script>
-import Template from './components/Template.vue';
+import Reactive from './components/Reactive01.vue';
+import Template from './components/Template01.vue';
 import HelloWorld from './components/HelloWorld.vue';
 
 export default {
@@ -16,7 +20,7 @@ export default {
     appName:String
   },
   components: {
-    HelloWorld, Template
+    HelloWorld, Template, Reactive
   },
   
   methods: {
