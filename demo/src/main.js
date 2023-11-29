@@ -1,4 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import List from './components/List.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.component('List', List);
+
+app.mount('#app');
+
+
