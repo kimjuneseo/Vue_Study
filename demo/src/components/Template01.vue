@@ -3,7 +3,7 @@
     <div @click="updateHtml" v-html="rawHtml">
         {{window.origin}}
     </div>
-    <input v-bind="inputAttrs" :/>
+    <input v-bind="inputAttrs" />
 </template>
 <script>
 import { nextTick } from 'vue';

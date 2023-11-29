@@ -2,14 +2,22 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld @click="clickHello" msg="Welcome to Your Vue.js App"/> -->
   <div>
+    <button :class="red">red</button>
     <List name="김준서"/>
     <Template></Template>
+    <hr>
     <br>
     <Reactive></Reactive>
+    <hr>
     <br>
     <Computed></Computed>
+    <hr>
     <br>
-    <ClassStyleBind></ClassStyleBind>
+    <ClassStyleBind :class="red"></ClassStyleBind>
+    <hr>
+    <br>
+    <IfElse></IfElse>
+    <hr>
     <br>
 
   </div>
@@ -21,6 +29,7 @@ import Template from './components/Template01.vue';
 import HelloWorld from './components/HelloWorld.vue';
 import Computed from './components/Computed01.vue';
 import ClassStyleBind from './components/ClassStyleBind.vue';
+import IfElse from './components/IfElse.vue';
 
 export default {
   name: 'App',
@@ -28,7 +37,7 @@ export default {
     appName:String
   },
   components: {
-    HelloWorld, Template, Reactive, Computed, ClassStyleBind
+    HelloWorld, Template, Reactive, Computed, ClassStyleBind, IfElse
   },
   
   methods: {
@@ -56,4 +65,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.red {
+      background: #000; 
+      border: none; 
+      color: red;
+  }
 </style>
