@@ -1,11 +1,13 @@
 <template lang="">
-    <p>텍스트 보간법 사용: {{ rawHtml }}</p>
-    <input v-bind="inputAttrs" />
-    <!-- <div @click="updateHtml" v-html="rawHtml"></div> -->
-    <span v-html="rawHtml"></span>
+    <div>
+
+        <p>텍스트 보간법 사용: {{ rawHtml }}</p>
+        <input v-bind="inputAttrs" />
+        <!-- <div @click="updateHtml" v-html="rawHtml"></div> -->
+        <span v-html="rawHtml"></span>
+    </div>
 </template>
 <script>
-import { nextTick } from 'vue';
 
 export default {
     name: "Template",

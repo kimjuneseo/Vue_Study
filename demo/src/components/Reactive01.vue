@@ -1,10 +1,13 @@
 <template lang="">
-    <button @click="handleBtn">
-        Reactive {{count}}
-    </button>
-    <button @click="handleDebounceBtn">
-        de {{count}}
-    </button>
+    <div>
+        
+        <button @click="handleBtn">
+            Reactive {{count}}
+        </button>
+        <button @click="handleDebounceBtn">
+            de {{count}}
+        </button>
+    </div>
 </template>
 <script>
 import { debounce } from 'lodash-es'

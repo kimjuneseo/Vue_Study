@@ -1,57 +1,65 @@
 <template>
   <div>
     <button :class="red">red</button>
-    <List name="김준서" />
+    <List01 name="김준서"></List01>
+    <hr />
+    <br />
     <Template></Template>
-    <hr>
-    <br>
+    <hr />
+    <br />
     <Reactive></Reactive>
-    <hr>
-    <br>
+    <hr />
+    <br />
     <Computed01></Computed01>
-    <hr>
-    <br>
+    <hr />
+    <br />
     <ClassStyleBind :class="red"></ClassStyleBind>
-    <hr>
-    <br>
+    <hr />
+    <br />
     <IfElse></IfElse>
-    <hr>
-    <br>
-
+    <hr />
+    <br />
+    <VFor></VFor>
+    <hr />
+    <br />
+    <EventHandel></EventHandel>
+    <hr />
+    <br />
   </div>
 </template>
 
 <script>
-import List from './components/List.vue';
-import Reactive from './components/Reactive01.vue';
-import Template from './components/Template01.vue';
-import Computed01 from './components/Computed01.vue';
-import ClassStyleBind from './components/ClassStyleBind.vue';
-import IfElse from './components/IfElse.vue';
+import List01 from "./components/List01.vue";
+import Reactive from "./components/Reactive01.vue";
+import Template from "./components/Template01.vue";
+import Computed01 from "./components/Computed01.vue";
+import ClassStyleBind from "./components/ClassStyleBind.vue";
+import IfElse from "./components/IfElse.vue";
+import VFor from "./components/VFor.vue";
+import EventHandel from "./components/EventHandel.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   props: {
-    appName: String
+    appName: String,
   },
   components: {
-    Template, Reactive, Computed01, ClassStyleBind, IfElse
+    List01,
+    Template,
+    Reactive,
+    Computed01,
+    ClassStyleBind,
+    IfElse,
+    VFor,
+    EventHandel,
   },
 
   methods: {
     clickHello($event) {
       console.log($event);
-    }
-
-  }
-}
-
-
-// console.log(document.querySelector('HelloWorld'));
-// document.querySelector('HelloWorld')?.addEventListener("click", () => {
-//   console.log(this);
-// })
-
+    },
+  },
+};
 </script>
 
 <style>
