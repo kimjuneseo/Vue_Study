@@ -25,6 +25,9 @@
     <EventHandel></EventHandel>
     <hr />
     <br />
+    <FormBind></FormBind>
+    <hr />
+    <br />
   </div>
 </template>
 
@@ -37,6 +40,8 @@ import ClassStyleBind from "./components/ClassStyleBind.vue";
 import IfElse from "./components/IfElse.vue";
 import VFor from "./components/VFor.vue";
 import EventHandel from "./components/EventHandel.vue";
+import FormBind from "./components/FormBind.vue";
+
 
 export default {
   name: "App",
@@ -52,6 +57,7 @@ export default {
     IfElse,
     VFor,
     EventHandel,
+    FormBind,
   },
 
   methods: {
