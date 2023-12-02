@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'Computed01',
+    name: "Computed01",
     data() {
         return {
             divAttr: {
