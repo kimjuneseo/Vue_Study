@@ -18,7 +18,7 @@ export default {
             checked: true,
             text: '',
         }
-    },
+    },  
 }
 </script>
 <style lang="">
