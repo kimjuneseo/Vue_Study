@@ -28,6 +28,9 @@
     <FormBind></FormBind>
     <hr />
     <br />
+    <Life></Life>
+    <hr />
+    <br />
   </div>
 </template>
 
@@ -41,8 +44,9 @@ import IfElse from "./components/IfElse.vue";
 import VFor from "./components/VFor.vue";
 import EventHandel from "./components/EventHandel.vue";
 import FormBind from "./components/FormBind.vue";
+import Life from "./components/Life.vue";
 
-
+/*eslint-disable*/
 export default {
   name: "App",
   props: {
@@ -58,6 +62,7 @@ export default {
     VFor,
     EventHandel,
     FormBind,
+    Life
   },
 
   methods: {
