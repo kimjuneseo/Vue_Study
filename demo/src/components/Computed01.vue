@@ -3,9 +3,10 @@
         {{ Isdisaply }}
     </div>
 </template>
+
 <script>
 export default {
-    name: "Computed01",
+    name: 'Computed01',
     data() {
         return {
             divAttr: {
@@ -25,6 +26,3 @@ export default {
     }
 }
 </script>
-<style lang="">
-    
-</style>

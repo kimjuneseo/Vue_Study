@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button :class="red">red</button>
+    <!-- <button :class="red">red</button>
     <List01 name="김준서"></List01>
     <hr />
     <br />
@@ -30,21 +30,26 @@
     <br />
     <Life></Life>
     <hr />
+    <br /> -->
+    <TemplateRef></TemplateRef>
+    <button @click="count++"></button>
+    <hr />
     <br />
   </div>
 </template>
 
 <script>
-import List01 from "./components/List01.vue";
-import Reactive from "./components/Reactive01.vue";
-import Template from "./components/Template01.vue";
-import Computed01 from "./components/Computed01.vue";
-import ClassStyleBind from "./components/ClassStyleBind.vue";
-import IfElse from "./components/IfElse.vue";
-import VFor from "./components/VFor.vue";
-import EventHandel from "./components/EventHandel.vue";
-import FormBind from "./components/FormBind.vue";
-import Life from "./components/Life.vue";
+// import List01 from "./components/List01.vue";
+// import Reactive from "./components/Reactive01.vue";
+// import Template from "./components/Template01.vue";
+// import Computed01 from "./components/Computed01.vue";
+// import ClassStyleBind from "./components/ClassStyleBind.vue";
+// import IfElse from "./components/IfElse.vue";
+// import VFor from "./components/VFor.vue";
+// import EventHandel from "./components/EventHandel.vue";
+// import FormBind from "./components/FormBind.vue";
+// import Life from "./components/Life.vue";
+import TemplateRef from "./components/TemplateRef.vue";
 
 /*eslint-disable*/
 export default {
@@ -53,18 +58,23 @@ export default {
     appName: String,
   },
   components: {
-    List01,
-    Template,
-    Reactive,
-    Computed01,
-    ClassStyleBind,
-    IfElse,
-    VFor,
-    EventHandel,
-    FormBind,
-    Life
+    // List01,
+    // Template,
+    // Reactive,
+    // Computed01,
+    // ClassStyleBind,
+    // IfElse,
+    // VFor,
+    // EventHandel,
+    // FormBind,
+    // Life,
+    TemplateRef
   },
-
+  data() {
+     return{
+      count: 0,
+     }
+  },
   methods: {
     clickHello($event) {
       console.log($event);
