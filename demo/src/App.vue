@@ -35,6 +35,7 @@
     <button @click="count++"></button>
     <hr />
     <br />
+    <ImageEditor/>
   </div>
 </template>
 
@@ -50,6 +51,7 @@
 // import FormBind from "./components/FormBind.vue";
 // import Life from "./components/Life.vue";
 import TemplateRef from "./components/TemplateRef.vue";
+import ImageEditor from "./components/ImageEditor.vue";
 
 /*eslint-disable*/
 export default {
@@ -68,7 +70,8 @@ export default {
     // EventHandel,
     // FormBind,
     // Life,
-    TemplateRef
+    TemplateRef,
+    ImageEditor
   },
   data() {
      return{
