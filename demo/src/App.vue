@@ -32,10 +32,14 @@
     <hr />
     <br /> -->
     <TemplateRef></TemplateRef>
-    <button @click="count++"></button>
+    <button @click="count++">플러스 {{ count }}</button>
     <hr />
     <br />
-    <ImageEditor/>
+    <!-- <ImageEditor/> -->
+    <hr />
+    <br />
+    <hr />
+    <ProvideInject/>
   </div>
 </template>
 
@@ -52,6 +56,9 @@
 // import Life from "./components/Life.vue";
 import TemplateRef from "./components/TemplateRef.vue";
 import ImageEditor from "./components/ImageEditor.vue";
+import ProvideInject from "./components/ProvideInject.vue";
+import { myInjectCountKey } from "@/key/key.js";
+import { computed } from 'vue';
 
 /*eslint-disable*/
 export default {
@@ -71,7 +78,13 @@ export default {
     // FormBind,
     // Life,
     TemplateRef,
-    ImageEditor
+    ImageEditor,
+    ProvideInject
+  },
+  provide() {
+    return {
+      [myInjectCountKey]: computed(() => this.count) 
+    }
   },
   data() {
      return{
